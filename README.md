@@ -20,6 +20,16 @@ It covers the *Circuits Logiques* (digital logic) course of an L2 Computer Scien
 
 ## Installation
 
+Install the latest version directly from GitHub:
+
+```bash
+pip install "git+https://github.com/GUELORD-MWENDERWA/logic-circuit-toolkit.git"
+```
+
+Or download the wheel from the [latest release](https://github.com/GUELORD-MWENDERWA/logic-circuit-toolkit/releases/latest) and run `pip install logickit-0.1.0-py3-none-any.whl`.
+
+For development:
+
 ```bash
 git clone https://github.com/GUELORD-MWENDERWA/logic-circuit-toolkit.git
 cd logic-circuit-toolkit
@@ -48,6 +58,14 @@ B.D + B.C + A
 ```
 
 The last example designs a "BCD digit greater than 4" detector, using the six invalid BCD codes as don't-cares.
+
+## Results
+
+The figures below are produced by the library itself. Regenerate them with `pip install matplotlib && python docs/make_figures.py`.
+
+![Full adder simulated gate by gate over all eight input combinations](docs/images/full_adder_timing.png)
+
+*Full adder simulated gate by gate over all eight input combinations*
 
 ## Library
 
